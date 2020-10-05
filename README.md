@@ -21,17 +21,17 @@
    => dlib, numpy, face_recognition 까지 설치가 끝납니다.
 
 6. 마지막으로 필요한 모듈들을 모두 설치해 줍니다. 
- 1) cd ..
- 2) pip install --upgrade pip
- 3) pip install -r requirements.txt
+   1) cd ..
+   2) pip install --upgrade pip
+   3) pip install -r requirements.txt
 
 7. 메인 코드를 실행해줌으로써 서버 구동은 끝납니다. 
-  python main,py => 서버 컴퓨터에서 컴퓨터가 실행됩니다.
+   1) python main.py => 서버 컴퓨터에서 컴퓨터가 실행됩니다.
 
 8. 마지막으로 외부에서도 접속할 수 있도록 도메인을 만들어주기 위해 ngrok이라는 
 프로그램을 다운받습니다.
-  1) ngrok 다운로드 (https://ngrok.com/download)
-  2) 명령 프롬프트 cmd로(powershell 아님) 들어갑니다.
-  3) cd (ngrok파일 저장된 주소)
-  4) ngrok http 9000
-   9000번 포트를 열어준 다음에 서버 주소(https://(ngrok주소))을 이용해 접속하면 완성.
+   1) ngrok 다운로드 (https://ngrok.com/download)
+   2) 명령 프롬프트 cmd로(powershell 아님) 들어갑니다.
+   3) cd (ngrok파일 저장된 주소)
+   4) ngrok http 9000
+   => 9000번 포트를 열어준 다음에 서버 주소(https://(ngrok주소))을 이용해 접속하면 완성.
