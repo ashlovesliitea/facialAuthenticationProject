@@ -25,7 +25,7 @@ mongo=PyMongo(app)
 
 UPLOAD_FOLDER='static/uploads'
 
-ALLOWED_EXTENSIONS=set(['jpg'])
+ALLOWED_EXTENSIONS=set(['jpg','jpeg','png'])
 
 Encodename=''
 
@@ -166,7 +166,7 @@ def member_2nd_auth():
                             print(matches)
 
                             if True in matches:
-                                # 비교해서 일치한 값(match)이 있다면, database 에서 이름을 가져와 match 에 붙여주기
+                                # 비교해서 일치한 값(match)이 있다면, 인코딩된 파일에서 이름을 가져와 match 에 붙여주기
                                 print("True in matches!")
                                 matchedIndxs = []
                                 for (i, b) in enumerate(matches):
@@ -213,9 +213,9 @@ def member_2nd_auth():
 
                         cv2.imshow("Recognition", flipped)
                        
-                        # 회원 데이터베이스의 userid 값과 캡처 정보가 일치한 값이 있다면,
+                        # 웹캠에 찍히는 사람을 데이터에 등록된 사람이라고 인식을 했는가를 확인한다.
                         if pdata["userid"] in counts:
-                             # 캡처 프레임 5개의 정보와 비교해 5번 이상 연속으로 일치하는지 확인
+                            # 5개의 프레임에 모두 동일한 사람이 찍혔는지?
                             if counts[pdata["userid"]] > 4:
                                 print("it's " + pdata["userid"] + "!")
                                 cnt += 1
