@@ -48,3 +48,7 @@ Team Project
 <br><br>
 [시연 동영상]
  : https://youtu.be/VDNqm0NoIQ8 에서 확인하실 수 있습니다.
+ 
+ <br>
+ [기술 요약서]
+ 인하대학교 IT 경진대회 동상 수상작: https://docs.google.com/document/d/1TYGcXFsMFMUevgaA9ockUKA0g8F1sEgu_uxlOxTzsv0/edit?userstoinvite=happydaram%40gmail.com
